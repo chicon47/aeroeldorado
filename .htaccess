@@ -1,0 +1,14 @@
+#Index é .php
+DirectoryIndex index.php index.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$0 [L]
+Options -Indexes 
+Options +FollowSymlinks 
+
+
+<Files "index.php">
+AcceptPathInfo On
+</Files>

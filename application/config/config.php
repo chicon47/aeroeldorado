@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   | environments.
   |
  */
-$config['base_url'] = 'http://192.168.1.109:8080/aeroeldorado/';
+$config['base_url'] = 'http://192.168.15.12/aeroeldorado/';
 
 /*
   |--------------------------------------------------------------------------

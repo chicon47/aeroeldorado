@@ -90,17 +90,18 @@ class Login extends CI_Controller {
                 else if($usuario[0]->cod_nivelacesso == 5){
                     $vetmenu = " cod_nivelacesso = 1 or cod_nivelacesso = 2 or cod_nivelacesso = 3 or cod_nivelacesso = 4 or cod_nivelacesso = 5"; 
                 }
-
+                
+                
                 $data['menu'] = $this->menu_model->buscaMenus($vetmenu);
                 
-                
+                print_r($vetmenu);
                 $dadoslogin = array(
                    
                     'datamenu' => $vetmenu,
                 );
 
                 $this->session->set_userdata($dadoslogin);
-                 
+                
                 redirect('a6BMnaIGv6', $data);
                 //$this->load->view('portal', $data);
             }
